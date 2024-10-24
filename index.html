@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Micro-Learning Hub</h1>
+        <p>Your go-to place for learning everyday skills!</p>
+        <nav>
+            <ul>
+                <li><a href="#cooking">Cooking</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#wellness">Wellness</a></li>
+                <li><a href="#home-improvement">Home Improvement</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="cooking">
+            <h2>Cooking Basics</h2>
+            <p>Learn essential cooking skills in bite-sized lessons!</p>
+            <button onclick="showLesson('cookingLesson')">Start Learning</button>
+            <div id="cookingLesson" class="lesson" style="display:none;">
+                <p>Lesson: How to Boil an Egg</p>
+                <p>Steps: Fill a pot with water, bring it to a boil, add eggs, boil for 9-12 minutes.</p>
+            </div>
+        </section>
+        
+        <section id="finance">
+            <h2>Personal Finance</h2>
+            <p>Get tips on managing your money effectively!</p>
+            <button onclick="showLesson('financeLesson')">Start Learning</button>
+            <div id="financeLesson" class="lesson" style="display:none;">
+                <p>Lesson: Budgeting Basics</p>
+                <p>Steps: Track your income and expenses, categorize them, and create a budget plan.</p>
+            </div>
+        </section>
+        
+        <section id="wellness">
+            <h2>Mental Wellness</h2>
+            <p>Explore techniques for maintaining mental well-being.</p>
+            <button onclick="showLesson('wellnessLesson')">Start Learning</button>
+            <div id="wellnessLesson" class="lesson" style="display:none;">
+                <p>Lesson: Mindfulness Meditation</p>
+                <p>Steps: Find a quiet space, focus on your breath, and let thoughts come and go.</p>
+            </div>
+        </section>
+        
+        <section id="home-improvement">
+            <h2>Home Improvement</h2>
+            <p>Learn DIY tips and tricks to enhance your home!</p>
+            <button onclick="showLesson('homeImprovementLesson')">Start Learning</button>
+            <div id="homeImprovementLesson" class="lesson" style="display:none;">
+                <p>Lesson: Fixing a Leaky Faucet</p>
+                <p>Steps: Turn off water supply, remove faucet handle, replace washer, reassemble.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Micro-Learning Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
